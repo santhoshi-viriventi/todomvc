@@ -13,7 +13,22 @@ module.exports = function (config) {
 		],
 		autoWatch: true,
 		singleRun: false,
-		browsers: ['Chrome', 'Firefox']
+		browsers: ['Chrome', 'Firefox'],
+		
+		reporters: ['coverage'],
+		coverageReporter: {
+            dir: 'test/coverage/',
+            reporters: [
+                {
+                    type: 'lcovonly'
+                },
+                {
+                    type: 'cobertura',subdir: '.', file: 'cobertura.xml'
+                }
+            ]
+        },
+
+		
 	});
 };
 // test 
