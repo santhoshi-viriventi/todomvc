@@ -12,7 +12,7 @@ module.exports = function (config) {
 			'test/unit/**/*.js'
 		],
 		autoWatch: true,
-	#	singleRun: false,
+		singleRun: false,
 		browsers: ['Chrome', 'Firefox'],
 		
 		reporters: ['coverage'],
@@ -27,7 +27,7 @@ module.exports = function (config) {
                 }
             ]
         },
-singleRun = true;
+
 reporters = ['dots', 'junit'];
 junitReporter = {
   outputFile: 'test/coverage/test-results.xml'
