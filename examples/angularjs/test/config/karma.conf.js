@@ -24,14 +24,13 @@ module.exports = function (config) {
                 },
                 {
                     type: 'cobertura',subdir: '.', file: 'cobertura.xml'
-                },
-                {
-                    type: 'coveragereport', subdir'.',file: 'test-results.xml'
                 }
             ]
-        },
+            },
 
-
+            junitReporter : {
+                                  outputFile: 'test/coverage/test-results.xml'
+                                }
 
 		
 	});
