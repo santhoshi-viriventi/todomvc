@@ -12,7 +12,7 @@ module.exports = function (config) {
 			'test/unit/**/*.js'
 		],
 		autoWatch: true,
-		singleRun: false,
+	#	singleRun: false,
 		browsers: ['Chrome', 'Firefox'],
 		
 		reporters: ['coverage'],
