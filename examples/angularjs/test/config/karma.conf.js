@@ -29,7 +29,7 @@ module.exports = function (config) {
             },
 
             junitReporter : {
-                                dir: 'test/coverage',     outputFile: 'test-results.xml'
+                                outputFile: 'test-results.xml'
                                 }
 
 		
