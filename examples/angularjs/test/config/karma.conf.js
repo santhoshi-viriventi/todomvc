@@ -15,7 +15,7 @@ module.exports = function (config) {
 		singleRun: false,
 		browsers: ['Chrome', 'Firefox'],
 		
-		reporters: ['coverage','junit'],
+		reporters: ['coverage'],
 		coverageReporter: {
             dir: 'test/coverage/',
             reporters: [
@@ -26,12 +26,9 @@ module.exports = function (config) {
                     type: 'cobertura',subdir: '.', file: 'cobertura.xml'
                 }
             ]
-            },
+            }
 
-            junitReporter : {
-                                outputFile: 'test-results.xml'
-                                }
-
+            
 		
 	});
 };
