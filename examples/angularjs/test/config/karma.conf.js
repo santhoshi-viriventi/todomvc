@@ -14,7 +14,7 @@ module.exports = function (config) {
                                 autoWatch: true,
                                 singleRun: false,
                                 browsers: ['Chrome', 'Firefox'],                 
-                                reporters: ['coverage'],
+                                reporters: ['coverage','juint'],
                                 coverageReporter: {
             dir: 'test/coverage/',
             reporters: [
@@ -26,5 +26,9 @@ module.exports = function (config) {
                 }
             ]
         },
+                                        junitReporter : {
+                                  outputFile: 'test/coverage/test-results.xml'
+                                }
+
                 });
 };
