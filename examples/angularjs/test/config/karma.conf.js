@@ -14,7 +14,7 @@ module.exports = function (config) {
                                 autoWatch: true,
                                 singleRun: false,
                                 browsers: ['Chrome', 'Firefox'],                 
-                                reporters: ['coverage','juint'],
+                                reporters: ['coverage','junit'],
                                 coverageReporter: {
             dir: 'test/coverage/',
             reporters: [
