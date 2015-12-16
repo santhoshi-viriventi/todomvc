@@ -15,7 +15,7 @@ module.exports = function (config) {
 		singleRun: false,
 		browsers: ['Chrome', 'Firefox'],
 		
-		reporters: ['coverage', 'junit'],
+		reporters: ['coverage','junit'],
 		coverageReporter: {
             dir: 'test/coverage/',
             reporters: [
