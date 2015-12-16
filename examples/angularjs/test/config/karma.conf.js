@@ -29,13 +29,10 @@ module.exports = function (config) {
             }
             
             junitReporter: {
-            	dir: 'test/report/',
-            	reporters:[
-            		{
-            			type: 'unit',subdir:'.', file: 'test-results.xml'
+            	
+            		outputfile: 'test/coverage/test-results.xml'
             		}
-            		]
-            }
+            	
 
             
 		
