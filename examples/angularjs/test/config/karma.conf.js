@@ -13,7 +13,7 @@ module.exports = function (config) {
                                 ],
                                 autoWatch: true,
                                 singleRun: false,
-                                browsers: ['Chrome', 'Firefox'],                 
+                                browsers: ['Chrome'],                 
                                 reporters: ['coverage','junit'],
                                 coverageReporter: {
             dir: 'test/coverage/',
